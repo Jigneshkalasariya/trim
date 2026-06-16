@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "node init && tsx watch src/index.ts",
     "prestart": "npm run build",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+    "build": "node init && tsc -p tsconfig.json",
+    "start": "node init && node dist/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
